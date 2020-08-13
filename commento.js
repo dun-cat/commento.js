@@ -690,7 +690,7 @@ function initCommento(global, document) {
 
     if (isLocked || isFrozen) {
       if (isAuthenticated || chosenAnonymous) {
-        append(mainArea, messageCreate("This thread is locked. You cannot add new comments."));
+        append(mainArea, messageCreate("评论区已被锁定，目前禁止发言哦~"));
         remove($(ID_LOGIN));
       } else {
         append(mainArea, login);
@@ -2017,9 +2017,9 @@ function initCommento(global, document) {
     classAdd(modTools, "mod-tools");
 
     if (isLocked) {
-      lock.innerHTML = "Unlock Thread";
+      lock.innerHTML = "解锁评论区";
     } else {
-      lock.innerHTML = "Lock Thread";
+      lock.innerHTML = "锁定评论区";
     }
 
     onclick(lock, global.threadLockToggle);

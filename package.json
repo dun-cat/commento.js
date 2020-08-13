@@ -1,0 +1,25 @@
+{
+  "name": "commento",
+  "version": "1.0.0",
+  "description": "做一些汉化处理",
+  "main": "commento.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dun-cat/commento.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dun-cat/commento.js/issues"
+  },
+  "homepage": "https://github.com/dun-cat/commento.js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "rollup": "^2.23.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  }
+}

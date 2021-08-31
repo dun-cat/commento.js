@@ -66,8 +66,10 @@ function initCommento(global, document) {
 
 
   // var origin = "[[[.Origin]]]";
-  var origin = "http://commento.lumin.tech";
-  var cdn = "http://commento.lumin.tech";
+  var isLocal = window.origin.indexOf('localhost') !== -1;
+  var host = isLocal ? "http://localhost:8088" : "https://commento.lumin.tech";
+  var origin = host
+  var cdn = host;
   // var cdn = "[[[.CdnPrefix]]]";
   var root = null;
   var pageId = parent.location.pathname;
